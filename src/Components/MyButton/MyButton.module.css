@@ -1,0 +1,7 @@
+.myBtn {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: rgb(166, 245, 241);
+    border: none;
+    border-radius: 4px;
+}

@@ -1,12 +1,12 @@
 import React from "react";
 import TodoItem from "../TodoItem/TodoItem";
+import Style from "./PostList.module.css";
 
-const PostList = ({posts}) => {
+const PostList = ({ posts }) => {
   return (
-    <div>
-        <h1>Post list</h1>
-      {posts.map((post) => {
-        return <TodoItem post={post} key={post.id} />;
+    <div className={Style.post}>
+      {posts.map((post, index) => {
+        return <TodoItem number={index + 1} post={post} key={post.id} />;
       })}
     </div>
   );
