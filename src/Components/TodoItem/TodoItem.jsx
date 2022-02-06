@@ -2,7 +2,7 @@ import React from "react";
 import MyButton from "../MyButton/MyButton";
 import Style from "./TodoItem.module.css";
 
-const TodoItem = ({ post, number }) => {
+const TodoItem = ({ post, number, remove }) => {
   return (
     <div className={Style.post}>
       <div className="post__content">
@@ -12,7 +12,7 @@ const TodoItem = ({ post, number }) => {
         <div>{post.body}</div>
       </div>
       <div className="post__btn">
-        <MyButton>Delete</MyButton>
+        <MyButton onClick={() => remove(post)}>Delete</MyButton>
       </div>
     </div>
   );

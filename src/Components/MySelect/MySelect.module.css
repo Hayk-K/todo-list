@@ -1,14 +1,14 @@
-.myInput {
-    width: 100%;
-    padding: 11px 15px;
-    margin: 10px 0px;
+.mySelect {
+    padding: 10px 15px;
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(0, 0, 0, 0.7);
     color: rgb(82, 240, 232);
+    border: 1px solid rgb(82, 240, 232);
     border-radius: 4px;
+     
 }
 
-.myInput:focus {
-    outline: none;
-}
-
+.mySelect:focus {
+      outline: none;
+  }
+  
